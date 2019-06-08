@@ -2,6 +2,8 @@
 
 This repository shows how to run a Dask cluster on an AzureML Compute cluster. It is designed to run on an AzureML Notebook VM, but it should work on your local computer, too. The changes to nginx, however, are only required on the notebook VM.
 
+Please follow these setup instructions and then start here [StartDask.ipynb](StartDask.ipynb).
+
 ## Patching nginx configuration on the Notebook VM
 To make sure you can monitor your dask cluster, you need to make a change to your notebook VM (this will no longer be required once [bug 443670](https://msdata.visualstudio.com/Vienna/_workitems/edit/443670) is fixed).
 
