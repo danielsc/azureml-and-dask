@@ -31,3 +31,5 @@ Or, if you want to be on the safe side, create a new conda environment using thi
     conda env create -f dask/environment.yml  
     conda activate dask
     python -m ipykernel install --user --name dask --display-name "Python (dask)"
+
+![](img/dask-status.gif)
