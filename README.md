@@ -32,4 +32,5 @@ Or, if you want to be on the safe side, create a new conda environment using thi
     conda activate dask
     python -m ipykernel install --user --name dask --display-name "Python (dask)"
 
-<img src="img/dask-status.gif" loop="infinite">
+![](img/dask-status.gif)
+
