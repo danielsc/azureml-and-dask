@@ -22,7 +22,7 @@ And assign it a DNS name, so you can access it by that name (alternatively, you 
 
 Here is some more information on the DSVM: https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro
 
-## Creat an AzureML Compute using the VNet
+## Create an AzureML Compute using the VNet
 
 ![](img/7.png)
 
@@ -30,7 +30,7 @@ Download the config.json from the workspace and upload it to the DSVM (just put 
 ![](img/10.png)
 
 ```
-scp config.json <DNS-name of your DSVM>
+scp config.json <DNS-name of your DSVM>:
 ```
 
 Now log in to the DSVM
@@ -39,7 +39,7 @@ Now log in to the DSVM
 ssh -L 8888:localhost:8888 <DNS-name of your DSVM>
 ```
 
-Now pull down this repository and create the python environment:
+Pull down this repository and create the python environment:
 
 ```
 git clone https://github.com/danielsc/azureml-and-dask
@@ -55,7 +55,7 @@ Next start jupyter on the DSVM:
 nohup jupyter notebook &
 ```
 
-Find the login token in nohup.out
+Find the login token/url in nohup.out
 
 ```
 (dask) danielsc@vnettestvm:~/git/azureml-and-dask$ tail nohup.out 
