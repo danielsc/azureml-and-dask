@@ -12,6 +12,7 @@
 
 ![](img/6.png)
 
+During setup, it is convenient to use your local username also for the DSVM and to provide your public key during setup, so you can easily ssh onto the VM.
 Once the DSVM is created, assign it a DNS name by clicking on the Public IP-Address
 ![](img/8.png)
 
@@ -25,15 +26,18 @@ Here is some more information on the DSVM: https://docs.microsoft.com/en-us/azur
 
 ![](img/7.png)
 
-
-Log in to the DSVM
-
-```
-ssh -L 8888:localhost:8888 vnettestvm
-```
-
-Downlload the config.json from the workspace and upload it to the DSVM (just put it your user's home folder).
+Download the config.json from the workspace and upload it to the DSVM (just put it your user's home folder).
 ![](img/10.png)
+
+```
+scp config.json <DNS-name of your DSVM>
+```
+
+Now log in to the DSVM
+
+```
+ssh -L 8888:localhost:8888 <DNS-name of your DSVM>
+```
 
 Now pull down this repository and create the python environment:
 
@@ -68,4 +72,4 @@ Find the login token in nohup.out
 If you started the ssh session with the port forward as above, then the link above should just work for you (in my case: http://localhost:8888/?token=6819bfd774eb016e2adc0eab9ec7ad04708058a278dd335f).
 
 
-Now choose StartDaskVNet.ipynb, select the dask kernel you created and run through it.
+Now choose [StartDaskVNet.ipynb](StartDaskVNet.ipynb), select the dask kernel you created and run through it.
