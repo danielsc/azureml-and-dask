@@ -39,7 +39,7 @@ Now log in to the DSVM
 ssh -L 8888:localhost:8888 <DNS-name of your DSVM>
 ```
 
-Pull down this repository and create the python environment:
+On the DSVM, pull down this repository and create the python environment:
 
 ```
 git clone https://github.com/danielsc/azureml-and-dask
