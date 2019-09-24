@@ -1,6 +1,6 @@
 # Running Dask on AzureML
 
-This repository shows how to run a Dask cluster on an AzureML Compute cluster. It is designed to run on an AzureML Notebook VM, but it should work on your local computer, too. The changes to nginx, however, are only required on the notebook VM.
+This repository shows how to run a [Dask](https://docs.dask.org/en/latest/) cluster on an [AzureML](https://docs.microsoft.com/en-us/azure/machine-learning/service/) Compute cluster. It is designed to run on an AzureML Notebook VM (created after 8/15/2019), but it should work on your local computer, too. 
 
 Please follow these setup instructions and then start here [StartDask.ipynb](StartDask.ipynb).
 
@@ -18,3 +18,4 @@ Or, if you want to be on the safe side, create a new conda environment using thi
     python -m ipykernel install --user --name dask --display-name "Python (dask)"
 
 ![](img/dask-status.gif)
+
