@@ -4,21 +4,6 @@ This repository shows how to run a Dask cluster on an AzureML Compute cluster. I
 
 Please follow these setup instructions and then start here [StartDask.ipynb](StartDask.ipynb).
 
-## Patching nginx configuration on the Notebook VM
-To make sure you can monitor your dask cluster, you need to make a change to your notebook VM (this will no longer be required once [bug 443670](https://msdata.visualstudio.com/Vienna/_workitems/edit/443670) is fixed).
-
-Open a terminal window on the notebook VM and do the following:
-
-1. open `/etc/nginx/nginx.conf` in an editor
-2. find this line  
- `location ~ (/api/kernels/|/terminals/websocket/) {`  
- and add `|ws`, so it looks like this  
- `location ~ (/api/kernels/|/terminals/websocket/|/ws) {`  
-3. run `sudo systemctl reload nginx`
-
-Unfortunately, you need to rerun this each time you restart the notebook VM -- again, until we fix [bug 443670](https://msdata.visualstudio.com/Vienna/_workitems/edit/443670).
-
-
 ## Setting up the Python Environment
 The environment you are running should have the latest version of `dask` and `distributed` installed -- run this code in the terminal to make sure:
 
