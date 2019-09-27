@@ -4,6 +4,11 @@ import argparse
 import socket
 from azureml.core import Run
 
+import sys, os
+pip = sys.executable[:-6] + 'pip freeze'
+print(pip)
+os.system(pip)
+
 if __name__ == '__main__':
     comm = MPI.COMM_WORLD
     rank = comm.Get_rank()

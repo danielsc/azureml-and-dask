@@ -1,2 +1,4 @@
-data/*
 .ipynb_checkpoints/*
+rapids_interactive/data/*
+**/._*
+nohup.out
