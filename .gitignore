@@ -1,3 +1,4 @@
+.vscode/**
 **/.ipynb_checkpoints/*
 rapids_interactive/data/*
 **/._*
