@@ -1,4 +1,4 @@
-# Setting up a DASK Cluster and a DSVM in a VNet
+# Setting up a DSVM in a VNet
 
 ## Create the VNet
 
@@ -67,5 +67,3 @@ Find the login token/url in nohup.out
 
 If you started the ssh session with the port forward as above, then the link above should just work for you (in my case: http://localhost:8888/?token=6819bfd774eb016e2adc0eab9ec7ad04708058a278dd335f).
 
-
-Now choose [StartDaskVNet.ipynb](StartDaskVNet.ipynb), select the dask kernel you created and run through it.
