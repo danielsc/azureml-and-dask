@@ -22,10 +22,6 @@ And assign it a DNS name, so you can access it by that name (alternatively, you 
 
 Here is some more information on the DSVM: https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro
 
-## Create an AzureML Compute using the VNet
-
-![](img/7.png)
-
 Download the config.json from the workspace and upload it to the DSVM (just put it your user's home folder).
 ![](img/10.png)
 
