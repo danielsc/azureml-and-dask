@@ -42,7 +42,10 @@ if __name__ == '__main__':
 
     
     if rank == 0:
-        os.system("dask-scheduler " + "--port " + scheduler.split(":")[1] + " --dashboard-address " + dashboard)
+        os.system("dask-scheduler " + 
+                  "--port " + scheduler.split(":")[1] + 
+                  " --dashboard-address " + dashboard + 
+                  " --preload jupyter-preload.py")
     elif rank == 1:
         os.environ["CUDA_VISIBLE_DEVICES"] = '0,1'  # allow the 1st worker to grab the GPU assigned to the scheduler as well as its own
         os.system("dask-cuda-worker " + scheduler + " --memory-limit 0")
