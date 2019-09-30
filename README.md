@@ -2,7 +2,10 @@
 
 This repository shows how to run a [Dask](https://docs.dask.org/en/latest/) cluster on an [AzureML](https://docs.microsoft.com/en-us/azure/machine-learning/service/) Compute cluster. It is designed to run on an AzureML Notebook VM (created after 8/15/2019), but it should work on your local computer, too. 
 
-Please follow these setup instructions and then start here [StartDask.ipynb](StartDask.ipynb).
+Please follow these setup instructions and then start:
+ 
+- here for plain DASK interactive scenarios [interactive/StartDask.ipynb](interactive/StartDask.ipynb).
+- here for DASK with NVIDIA RAPIDS interactive scenarios [rapids_interactive/start_cluster.ipynb](rapids_interactive/start_cluster.ipynb).
 
 ## Setting up the Python Environment
 The environment you are running should have the latest version of `dask` and `distributed` installed -- run this code in the terminal to make sure:
