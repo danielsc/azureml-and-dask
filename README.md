@@ -15,7 +15,7 @@ The environment you are running should have the latest version of `dask` and `di
     pip install --upgrade dask distributed
 ```
 
-Or, if you want to be on the safe side, create a new conda environment using this [environment.yml](dask/environment.yml) file like so:
+Or, if you want to be on the safe side, create a new conda environment using this [environment.yml](interactive/dask/environment.yml) file like so:
 
 ```shell
     conda env create -f dask/environment.yml  

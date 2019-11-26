@@ -3,6 +3,10 @@ channels:
   - defaults
   - conda-forge
 dependencies:
+  - gcsfs
+  - fs-gcsfs
+  - jupyterlab
+  - jupyter-server-proxy
   - python=3.6
   - numpy
   - h5py
@@ -32,3 +36,4 @@ dependencies:
     - azureml-sdk[notebooks]
     - mpi4py
     - gym
+    - adlfs
