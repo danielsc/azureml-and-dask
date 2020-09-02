@@ -19,7 +19,7 @@ CONTAINER = ds.container_name
 
 known_implementations['abfs'] = {'class': 'adlfs.AzureBlobFileSystem'}
 STORAGE_OPTIONS={'account_name': ACCOUNT_NAME, 'account_key': ACCOUNT_KEY}
-df = dd.read_csv(f'abfs://{CONTAINER}/nyctaxi/2015/*.csv', 
+df = dd.read_csv(f'abfs://{CONTAINER}/nyctaxi/*.csv', 
                  storage_options=STORAGE_OPTIONS,
                  parse_dates=['tpep_pickup_datetime', 'tpep_dropoff_datetime'])
 
