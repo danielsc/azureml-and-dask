@@ -11,7 +11,7 @@ Please follow these setup instructions and then start:
 The environment you are running should have the latest version of `dask` and `distributed` installed -- run this code in the terminal to make sure:
 
 ```shell
-    conda activate py36  # assuming AzureML Notebook VM
+    conda activate azureml_py36  # assuming AzureML Notebook VM
     pip install --upgrade dask distributed
 ```
 
