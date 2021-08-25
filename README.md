@@ -1,5 +1,10 @@
 # Running Dask on AzureML
 
+**This repository is no longer maintained. For a simple way of running Dask on an AzureML cluster, please check out the AzureML CLI v2 DASK samples here: https://github.com/Azure/azureml-examples/tree/main/cli/jobs/dataprep/dask/**
+
+
+---- 
+
 This repository shows how to run a [Dask](https://docs.dask.org/en/latest/) cluster on an [AzureML](https://docs.microsoft.com/en-us/azure/machine-learning/service/) Compute cluster. It is designed to run on an AzureML Notebook VM (created after 8/15/2019), but it should work on your local computer, too. 
 
 Please follow these setup instructions and then start:
