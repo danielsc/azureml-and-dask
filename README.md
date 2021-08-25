@@ -1,6 +1,6 @@
 # Running Dask on AzureML
 
-**This repository is no longer maintained. For a simple way of running Dask on an AzureML cluster, please check out the AzureML CLI v2 DASK samples here: https://github.com/Azure/azureml-examples/tree/main/cli/jobs/dataprep/dask/**
+**This repository is no longer maintained. For a simple way of running Dask on an AzureML cluster, please check out the AzureML CLI v2 DASK samples here: https://github.com/Azure/azureml-examples/cli/**
 
 
 ---- 
